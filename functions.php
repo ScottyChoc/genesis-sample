@@ -13,23 +13,11 @@
 // Start the engine.
 include_once( get_template_directory() . '/lib/init.php' );
 
-// Setup Theme.
-include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
-
 // Set Localization (do not remove).
 add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
 function genesis_sample_localization_setup(){
 	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
 }
-
-// Add the helper functions.
-include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
-
-// Add Image upload and Color select to WordPress Theme Customizer.
-require_once( get_stylesheet_directory() . '/lib/customize.php' );
-
-// Include Customizer CSS.
-include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 // Add WooCommerce support.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
