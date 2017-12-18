@@ -7,28 +7,28 @@
 .site-inner,
 .wrap {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 128rem;
 }
 
 .site-inner {
   clear: both;
-  padding-top: 40px;
+  padding-top: 4rem;
   word-wrap: break-word;
 }
 
 .landing-page .site-inner {
-  max-width: 800px;
+  max-width: 80rem;
 }
 
 /* ## Column Widths and Positions
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 /* ### Wrapping div for .content and .sidebar-primary */
 
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  width: 1060px;
+  width: 106rem;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
@@ -44,7 +44,7 @@
 
 .content {
   float: right;
-  width: 880px;
+  width: 88rem;
 }
 
 .content-sidebar .content,
@@ -56,7 +56,7 @@
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content,
 .sidebar-sidebar-content .content {
-  width: 660px;
+  width: 66rem;
 }
 
 .full-width-content .content {
@@ -67,7 +67,7 @@
 
 .sidebar-primary {
   float: right;
-  width: 360px;
+  width: 36rem;
 }
 
 .sidebar-content .sidebar-primary,
@@ -79,7 +79,7 @@
 
 .sidebar-secondary {
   float: left;
-  width: 180px;
+  width: 18rem;
 }
 
 .content-sidebar-sidebar .sidebar-secondary {
@@ -87,7 +87,7 @@
 }
 
 /* ## Column Classes
-  --------------------------------------------- */
+    --------------------------------------------- */
 /* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
 
 .five-sixths,

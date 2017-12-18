@@ -13,13 +13,11 @@ html {
 
 body {
   > div {
-    font-size: 20px;
     font-size: 2rem;
   }
-  background-color: #eee;
-  color: #333;
+  background-color: $lightest-grey;
+  color: $dark-grey;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -60,11 +58,11 @@ textarea:focus,
 }
 
 a {
-  color: #c3251d;
+  color: $primary;
   text-decoration: underline;
   &:focus,
   &:hover {
-    color: #333;
+    color: $dark-grey;
     text-decoration: none;
   }
 }
@@ -87,7 +85,7 @@ li {
 hr {
   border: 0;
   border-collapse: collapse;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $lightest-grey;
   clear: both;
   margin: 1em 0;
 }
@@ -105,26 +103,25 @@ i {
 }
 
 mark {
-  background: #ddd;
+  background: $extra-light-grey;
   color: #000;
 }
 
 blockquote {
-  margin: 40px;
+  margin: 4rem;
   &::before {
     content: "\201C";
     display: block;
-    font-size: 30px;
     font-size: 3rem;
     height: 0;
-    left: -20px;
+    left: -2rem;
     position: relative;
-    top: -10px;
+    top: -1rem;
   }
 }
 
 /* ## Headings
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 h1,
 h2,
@@ -135,41 +132,35 @@ h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   line-height: 1.2;
-  margin: 0 0 10px;
+  margin: 0 0 1rem;
 }
 
 h1 {
-  font-size: 36px;
   font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 30px;
   font-size: 3rem;
 }
 
 h3 {
-  font-size: 24px;
   font-size: 2.4rem;
 }
 
 h4 {
-  font-size: 20px;
   font-size: 2rem;
 }
 
 h5 {
-  font-size: 18px;
   font-size: 1.8rem;
 }
 
 h6 {
-  font-size: 16px;
   font-size: 1.6rem;
 }
 
 /* ## Objects
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 embed,
 iframe,
@@ -189,7 +180,7 @@ figure {
 }
 
 /* ## Gallery
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 .gallery {
   overflow: hidden;
@@ -197,7 +188,7 @@ figure {
 
 .gallery-item {
   float: left;
-  margin: 0 0 28px;
+  margin: 0 0 2.8rem;
   text-align: center;
 }
 
@@ -249,34 +240,33 @@ figure {
 }
 
 .gallery img {
-  border: 1px solid #eee;
+  border: 1px solid $lightest-grey;
   height: auto;
-  padding: 4px;
+  padding: 0.4rem;
   &:focus,
   &:hover {
-    border: 1px solid #999;
+    border: 1px solid $light-grey;
   }
 }
 
 /* ## Forms
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 input,
 select,
 textarea {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  color: #333;
-  font-size: 18px;
+  background-color: $white;
+  border: 1px solid $extra-light-grey;
+  color: $dark-grey;
   font-size: 1.8rem;
   font-weight: 400;
-  padding: 16px;
+  padding: 1.6rem;
   width: 100%;
 }
 
 input:focus,
 textarea:focus {
-  border: 1px solid #999;
+  border: 1px solid $light-grey;
   outline: none;
 }
 
@@ -289,23 +279,22 @@ input {
 }
 
 ::-moz-placeholder {
-  color: #333;
+  color: $dark-grey;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #333;
+  color: $dark-grey;
 }
 
 button {
-  background-color: #333;
+  background-color: $dark-grey;
   border: 0;
-  color: #fff;
+  color: $white;
   cursor: pointer;
-  font-size: 16px;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 1.6rem 2.4rem;
   text-decoration: none;
   white-space: normal;
   width: auto;
@@ -315,14 +304,13 @@ input {
   &[type="button"],
   &[type="reset"],
   &[type="submit"] {
-    background-color: #333;
+    background-color: $dark-grey;
     border: 0;
-    color: #fff;
+    color: $white;
     cursor: pointer;
-    font-size: 16px;
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 16px 24px;
+    padding: 1.6rem 2.4rem;
     text-decoration: none;
     white-space: normal;
     width: auto;
@@ -330,14 +318,13 @@ input {
 }
 
 .button {
-  background-color: #333;
+  background-color: $dark-grey;
   border: 0;
-  color: #fff;
+  color: $white;
   cursor: pointer;
-  font-size: 16px;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 1.6rem 2.4rem;
   text-decoration: none;
   white-space: normal;
   width: auto;
@@ -346,8 +333,8 @@ input {
 button {
   &:focus,
   &:hover {
-    background-color: #c3251d;
-    color: #fff;
+    background-color: $primary;
+    color: $white;
   }
 }
 
@@ -355,22 +342,22 @@ input {
   &[type="button"] {
     &:focus,
     &:hover {
-      background-color: #c3251d;
-      color: #fff;
+      background-color: $primary;
+      color: $white;
     }
   }
   &[type="reset"] {
     &:focus,
     &:hover {
-      background-color: #c3251d;
-      color: #fff;
+      background-color: $primary;
+      color: $white;
     }
   }
   &[type="submit"] {
     &:focus,
     &:hover {
-      background-color: #c3251d;
-      color: #fff;
+      background-color: $primary;
+      color: $white;
     }
   }
 }
@@ -378,15 +365,15 @@ input {
 .button {
   &:focus,
   &:hover {
-    background-color: #c3251d;
-    color: #fff;
+    background-color: $primary;
+    color: $white;
   }
 }
 
 .entry-content .button {
   &:focus,
   &:hover {
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -396,27 +383,27 @@ input {
 
 a.button.small,
 button.small {
-  padding: 8px 16px;
+  padding: 0.8rem 1.6rem;
 }
 
 input {
   &[type="button"].small,
   &[type="reset"].small,
   &[type="submit"].small {
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
   }
 }
 
 .site-container {
   button:disabled {
-    background-color: #eee;
+    background-color: $lightest-grey;
     border-width: 0;
-    color: #777;
+    color: $grey;
     cursor: not-allowed;
     &:hover {
-      background-color: #eee;
+      background-color: $lightest-grey;
       border-width: 0;
-      color: #777;
+      color: $grey;
       cursor: not-allowed;
     }
   }
@@ -425,14 +412,14 @@ input {
     &[type="button"]:disabled,
     &[type="reset"]:disabled,
     &[type="submit"]:disabled {
-      background-color: #eee;
+      background-color: $lightest-grey;
       border-width: 0;
-      color: #777;
+      color: $grey;
       cursor: not-allowed;
       &:hover {
-        background-color: #eee;
+        background-color: $lightest-grey;
         border-width: 0;
-        color: #777;
+        color: $grey;
         cursor: not-allowed;
       }
     }
@@ -447,19 +434,19 @@ input[type="search"] {
 }
 
 /* ## Tables
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
   line-height: 2;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   width: 100%;
   word-break: break-all;
 }
 
 tbody {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $lightest-grey;
 }
 
 td,
@@ -468,8 +455,8 @@ th {
 }
 
 td {
-  border-top: 1px solid #eee;
-  padding: 6px;
+  border-top: 1px solid $lightest-grey;
+  padding: 0.6rem;
 }
 
 th {
@@ -483,7 +470,7 @@ th:first-child {
 }
 
 /* ## Screen Reader Text
-  --------------------------------------------- */
+    --------------------------------------------- */
 
 .screen-reader-shortcut {
   border: 0;
@@ -513,15 +500,15 @@ th:first-child {
     word-wrap: normal !important;
   }
   &:focus {
-    background: #fff;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    background: $white;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #333;
+    color: $dark-grey;
     display: block;
     font-size: 1em;
     font-weight: bold;
     height: auto;
-    padding: 15px 23px 14px;
+    padding: 1.5rem 2.3rem 1.4rem;
     text-decoration: none;
     width: auto;
     z-index: 100000;
@@ -532,15 +519,15 @@ th:first-child {
 .screen-reader-shortcut:focus,
 .genesis-nav-menu .search input[type="submit"]:focus,
 .widget_search input[type="submit"]:focus {
-  background: #fff;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  background: $white;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #333;
+  color: $dark-grey;
   display: block;
   font-size: 1em;
   font-weight: bold;
   height: auto;
-  padding: 15px 23px 14px;
+  padding: 1.5rem 2.3rem 1.4rem;
   text-decoration: none;
   width: auto;
   z-index: 100000;
