@@ -15,4 +15,7 @@
 //* Force full-width-content layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
+//* Remove the post content (requires HTML5 theme support)
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+
 genesis();
